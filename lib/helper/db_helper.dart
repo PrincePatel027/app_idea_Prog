@@ -117,7 +117,7 @@ class DbHelper {
         user_id,
         title,
         image
-      ) VALUES (?, ?, ?, ?);
+      ) VALUES (?, ?, ?);
     """;
 
     List<dynamic> args = [
@@ -158,7 +158,7 @@ class DbHelper {
   }) async {
     String query = """
         INSERT INTO comments (post_id, user_id, content) 
-        VALUES (?, ?, ?, ?);
+        VALUES (?, ?, ?);
       """;
     return await database!.rawInsert(query, [postId, userId, content]);
   }
@@ -169,7 +169,7 @@ class DbHelper {
   }) async {
     String query = """
       INSERT INTO likes (post_id, user_id) 
-      VALUES (?, ?, ?);
+      VALUES (?, ?);
     """;
     return await database!.rawInsert(query, [postId, userId]);
   }
