@@ -12,6 +12,9 @@ This is a simple Flutter-based social app that allows users to sign up, log in, 
 - **State Management**: Uses `Provider` for state management across the app.
 - **SQLite Database**: Stores data using SQLite through the custom `DbHelper` class.
 
+## Video
+https://github.com/user-attachments/assets/818ecf71-e213-4051-92e0-66fafaf4090b
+
 ## Dependencies
 
 The following dependencies are used in this project:
